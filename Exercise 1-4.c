@@ -7,7 +7,7 @@
 
 int main()
 {
-    int fahr, celsius;
+    float fahr, celsius;
     int lower, upper, step;
     
     lower = 0;
@@ -21,7 +21,7 @@ int main()
     while (celsius <= upper)
     {
         fahr = (9 * celsius / 5) + 32;
-        printf ("\t%d\t%d\n", celsius, fahr);
+        printf ("\t%3.1\t%6.2\n", celsius, fahr);
         celsius = celsius + step;
     }
 }
